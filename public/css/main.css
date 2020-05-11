@@ -1,0 +1,17 @@
+.main-content {
+	color: #333333;
+	font-size: 2vw;
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 0 16px;
+
+
+	/*flex box style*/
+	display: flex;
+	flex-direction: column; /*row means everything left to right, column means top to bottom*/
+	min-height: 84vh; /*100% of ViewportHeight to take up entire height of page*/
+}
+
+.main-content{
+	flex-grow: 1; /* this means this element should take up all leftover space*/
+}

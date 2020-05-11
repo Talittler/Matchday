@@ -1,0 +1,96 @@
+html *{
+	font-family: helvetica, sans-serif;
+}
+
+h1{
+	color: grey;
+	font-size: 6vw;
+	margin-bottom: 16px;
+	text-align: center;	
+}
+
+img{
+	width: 250px;
+}
+
+body {
+	color: #333333;
+	font-size: 2vw;
+	max-width: 650px;
+	margin: 0 auto;
+	padding: 0 16px;
+
+
+	/*flex box style*/
+	display: flex;
+	flex-direction: column; /*row means everything left to right, column means top to bottom*/
+	min-height: 100vh; /*100% of ViewportHeight to take up entire height of page*/
+}
+
+.main-content{
+	flex-grow: 1; /* this means this element should take up all leftover space*/
+}
+
+footer{
+	background: white;
+	padding: 16px 0 ; /* puts space between the content inside the box and the edge of the box*/
+	margin: 0px;/*puts space between this element and other elements. So outside the box*/
+	border-top: 1px solid #eeeeee; /*creates a border with a colour and thickness */
+	margin-top: 16px;
+	
+}
+
+header{
+	font-size: 3vw;
+	margin-top: 16px;
+	margin-bottom: 48px;
+	text-align: center;
+	flex-wrap: nowrap;
+	position: fixed;
+}
+
+.navigation{
+	font-size: 3vw;
+	text-align: center;
+	border-top: 1px solid #eeeeee; /*creates a border with a colour and thickness */
+	border-bottom: 1px solid #eeeeee; /*creates a border with a colour and thickness */
+	margin: 3px 0px 3px 0px; /* top | right | bottom | left */
+	padding: 3px 0px 3px 0px; /* puts space between the content inside the box and the edge of the box*/
+
+
+}
+
+header a{	/* targets links inside the header*/
+	color: 888888;
+	margin-right: 16px;
+	text-decoration: none;
+
+}
+
+.imgRobot{
+	width: 120px;
+}
+
+input{
+	border: 1px solid #cccccc;
+	padding: 8px;
+	width: 5%;
+	height: 5%;
+	text-align: center;
+	font-size: 80%;
+	margin: auto;
+	padding: 3px 0px 3px 0px; /* puts space between the content inside the box and the edge of the box*/
+}
+
+button{
+	cursor: pointer;
+	border: 1px solid #888888;
+	background: #888888;
+	color: white;
+	padding: 8px;
+	width: 5%;
+	height: 5%;
+	font-size: 50%;
+	margin: auto;
+	padding: 3px 0px 3px 0px; /* puts space between the content inside the box and the edge of the box*/
+}

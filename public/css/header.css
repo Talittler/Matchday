@@ -1,0 +1,107 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.navigation-bar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #455e2c;
+
+}
+
+.header-text{
+    color: rgb(234, 234, 234);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+.navigation-links {
+    display: flex;
+    justify-content: space-around;
+    width: 35%;
+    text-align: center;
+	padding: 3px 0px 3px 0px; /* puts space between the content inside the box and the edge of the box*/
+}
+
+.navigation-links li{
+    list-style: none;
+    text-align: center;
+}
+.navigation-link-most {
+    /*border-right: 1px solid rgb(234, 234, 234);*/
+    border-bottom: none;
+}
+.navigation-link-last {border:none;}
+
+
+.navigation-links a{
+    color: rgb(234, 234, 234);
+    letter-spacing: 3px;
+    font-size: 10px;
+    padding: 3px;
+    text-decoration: none;
+	padding: 3px 5px 10px 0px; /* puts space between the content inside the box and the edge of the box*/
+
+}
+
+
+
+
+.burger{
+    display: none;
+}
+.burger div{
+    width: 20px;
+    height: 2px;
+    background-color: rgb(234, 234, 234);
+    margin: 5px;
+
+}
+
+
+@media screen and (max-width:1024px) {
+    .navigation-links {
+        display: flex;
+        justify-content: space-around;
+        width: 35%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    body{
+        overflow-x: hidden; /* anything outside the screen becomes hidden rather than scrollable*/
+    }
+    .navigation-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+        background-color: blue;
+        transform: translate(100%);/* moves it off the screen */
+    }
+    .navigation-link-most {
+        border-bottom: 1px solid rgb(234, 234, 234);
+        border-right: none;
+
+    }
+    .navigation-link-last {border:none;}
+    .navigation-links li{
+        opacity: 0;
+    }
+    .burger{
+        display: block;
+    }
+}
+
+.nav-active{
+    transform: translatex(0%)
+}
